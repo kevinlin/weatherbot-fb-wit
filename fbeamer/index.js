@@ -86,22 +86,20 @@ class FBeamer {
             var nlp;
             if (message.nlp.entities.location) {
                 nlp = {
-                    intent: message.nlp.entities.intent[0].value,
+                    intent: message.nlp.entities.intent.value,
                     location: message.nlp.entities.location[0].value
                 }
             } else {
                 nlp = {
-                    intent: message.nlp.entities.intent[0].value
+                    intent: message.nlp.entities.intent.value
                 }
             }
 
-            let obj = {
+            return {
                 sender,
                 type: 'text',
                 content: nlp
             };
-
-            return obj;
         }
     }
 
