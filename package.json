@@ -7,14 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
-    "node": "9.8.0"
+    "node": ">=18"
   },
   "author": "Russell JVM Gutierrez",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "1.18.2",
-    "express": "4.16.3",
-    "request": "2.83.0",
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "request": "^2.88.2",
     "simplesky": "1.1.1"
   }
 }
